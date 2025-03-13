@@ -11,3 +11,26 @@ go run main.go
 go run .
 go build main.go
 ```
+
+### Pros
+
+- Powerful concurreny
+- Simple
+- Rich standard library
+- Performant
+
+### Cons
+
+- No OOP
+- Verbose error handling
+- Garbage collector
+- No gui libraries
+
+## Rust
+
+### Project init
+
+```sh
+cargo init
+cargo build --release 
+```

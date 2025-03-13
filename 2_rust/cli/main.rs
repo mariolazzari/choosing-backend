@@ -1,0 +1,24 @@
+use std::env;
+use std::error::Error;
+
+fn main() -> Result<(), Box<dyn Error>> {
+    let args: Vec<String> = env::args().collect();
+    if args.len() != 3 {
+        eprintln!("Usage: weather_cli <latitude> <longitude>");
+        std::process::exit(1);
+    }
+
+    let lat = &args[1];
+    let lon = &args[2];
+
+    let client = Client::new();
+    let api_key ="369cb0d7b55fa120eb3b0bfc6ac64a32"
+
+     let url = format!(
+        "https://api.openweathermap.org/data/2.5/weather?lat={}&lon={}&appid={}&units=metric",
+        lat, lon, api_key
+    );
+
+    println!("Debug: {} || {}", lat, lon);
+    Ok(())
+}
