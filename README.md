@@ -34,3 +34,30 @@ go build main.go
 cargo init
 cargo build --release 
 ```
+
+### Pros
+
+- Speed
+- Memory
+
+### Cons
+
+- Ownership
+- Concurrency
+- Refactoring
+
+## TypeScript
+
+### Project init
+
+```sh
+bun index.ts
+```
+
+### Pros
+
+- Collaboration
+- Types
+- Refactoring
+
+### Cons
